@@ -22,7 +22,9 @@ catch_errors = True
 desktop_notify = True
 shutdown_check = True
 sound_player_on = False
-mainwindow_geometry = 0 0 1600 900
+mainwindow_geometry = 0 0 1440 860
+overlay_play_sound = False
+overlay_sound_type = RING
 
 [MCH_MSG_OPTIONS]
 mchnMsg_play_sound = False
@@ -48,10 +50,10 @@ notify_start_detail = This option can be changed in the preference file
 notify_start_timeout = 5
 
 [BOOK_KEEPING]
-last_loaded_directory = /tmp/emcflt-RL4kth.d
-last_loaded_file = /tmp/emcflt-RL4kth.d/simp.png
+last_loaded_directory = /tmp/emcflt-mjm6hh.d
+last_loaded_file = /tmp/emcflt-mjm6hh.d/star.png
 style_QSS_Path = /usr/share/qtvcp/screens/qtdragon/qtdragon_dark_grey.qss
-RecentPath_0 = /home/coredump/linuxcnc/nc_files/examples/ngcgui_lib/simp.png
+RecentPath_0 = /home/coredump/linuxcnc/nc_files/examples/gcmc_lib/star.png
 
 [PROBE OPTIONS]
 Probe tool = 0
@@ -111,6 +113,27 @@ offset_table-G59 = User System 6
 offset_table-G59.1 = User System 7
 offset_table-G59.2 = User System 8
 offset_table-G59.3 = User System 9
+originoffsetview-G54 = User System 1
+originoffsetview-G55 = User System 2
+originoffsetview-G56 = User System 3
+originoffsetview-G57 = User System 4
+originoffsetview-G58 = User System 5
+originoffsetview-G59 = User System 6
+originoffsetview-G59.1 = User System 7
+originoffsetview-G59.2 = User System 8
+originoffsetview-G59.3 = User System 9
 
 [FILEMANAGER_JUMPLIST]
+
+[SCREEN_CONTROL_LAST_SETTING]
+statusadjustmentbar_4-hi-value = 75
+statusadjustmentbar_4-low-value = 25
+statusadjustmentbar_3-hi-value = 75
+statusadjustmentbar_3-low-value = 25
+statusadjustmentbar_6-hi-value = 75
+statusadjustmentbar_6-low-value = 25
+statusadjustmentbar_2-hi-value = 75
+statusadjustmentbar_2-low-value = 25
+statusadjustmentbar_5-hi-value = 75
+statusadjustmentbar_5-low-value = 25
 

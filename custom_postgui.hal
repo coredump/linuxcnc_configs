@@ -24,7 +24,7 @@
 #QTDRAGON VFD
 net spindle-current 			   <= qtdragon.spindle_amps 
 net spindle-voltage                        <= qtdragon.spindle_volts
-#net spindle-at-speed                       <= qtdragon.spindle_at_speed
+net spindle-at-speed                       qtdragon.led_at_speed
 net spindle-pause     qtdragon.spindle_pause => spindle.0.inhibit
 
 #QTDRAGON SWITCH LEDS?
