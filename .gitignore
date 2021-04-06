@@ -1,0 +1,7 @@
+backups/
+qtvcp/
+*.pickle
+*.var
+*.bak
+*.halscope
+

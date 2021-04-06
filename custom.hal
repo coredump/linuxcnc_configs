@@ -1,0 +1,39 @@
+# Include your custom HAL commands here
+# This file will not be overwritten when you run PNCconf again
+#
+
+#Start Stop HOLD BUTTONS
+# External Program Pause/Resume, Run/Step, and Stop Buttons
+
+loadrt and2 count=5
+loadrt or2 count=2
+loadrt toggle count=1
+loadrt toggle2nist count=1
+
+addf and2.1 servo-thread
+addf and2.2 servo-thread
+addf and2.3 servo-thread
+addf and2.4 servo-thread
+addf or2.0 servo-thread
+addf or2.1 servo-thread
+addf toggle.0 servo-thread
+addf toggle2nist.0 servo-thread
+
+# Run/Step Section
+# This is your Run/Step input
+net run-step-btn and2.3.in0 and2.4.in0 <= hm2_7i96.0.gpio.005.in
+net idle-on and2.3.in1 <= halui.program.is-idle
+net run-sig halui.mode.auto halui.program.run <= and2.3.out
+net step-sig halui.program.step <= and2.4.out
+
+# Pause/Resume Section
+# This is your Pause/Resume input
+net pause-resume-btn and2.1.in0 and2.2.in0 <= hm2_7i96.0.gpio.004.in
+net pause-on toggle2nist.0.is-on and2.1.in1 and2.4.in1 <= halui.program.is-paused
+net run-on and2.2.in1 <= halui.program.is-running
+net pause-sig or2.0.in0 <= and2.1.out
+net resume-sig or2.0.in1 <= and2.2.out
+net toggle-ok toggle.0.in <= or2.0.out
+net togglesig toggle2nist.0.in <= toggle.0.out
+net toggleon or2.1.in0 <= toggle2nist.0.on
+net toggleoff halui.program.resume <= toggle2nist.0.off
