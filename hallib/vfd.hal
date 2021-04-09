@@ -1,6 +1,8 @@
 loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
+
+# hy_vfd speed feedback is given in RPM, while some pins need it in 
+# RPS, so we use a scale
 loadrt scale names=scale_to_rpm
-loadrt lowpass names=lowpass_velocity
 
 # Replace ttyUSB0 with the address of your adapter
 
