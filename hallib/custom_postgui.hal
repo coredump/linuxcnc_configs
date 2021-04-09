@@ -22,12 +22,30 @@
 #net cal_offset       motion.analog-out-12 => qtdragon.cal_offset
 
 #QTDRAGON VFD
-net spindle-current 			   <= qtdragon.spindle_amps 
-net spindle-voltage                        <= qtdragon.spindle_volts
-net spindle-at-speed                       qtdragon.led_at_speed
-net spindle-pause     qtdragon.spindle_pause => spindle.0.inhibit
+#net spindle-current 			   <= qtdragon.spindle_amps 
+#net spindle-voltage                        <= qtdragon.spindle_volts
+#net spindle-at-speed                       qtdragon.led_at_speed
+#net spindle-pause     qtdragon.spindle_pause => spindle.0.inhibit
 
 #QTDRAGON SWITCH LEDS?
 #net x-pos-limit <= qtdragon.led_home_x
 #net y-pos-limit <= qtdragon.led_home_y
 #net z-pos-limit <= qtdragon.led_home_z
+
+loadusr qtpyvcp
+net spindle-current qtpyvcp.spindle-load-indicator.in-f
+
+setp qtpyvcp.spindle-load-indicator.min-val 0
+setp qtpyvcp.spindle-load-indicator.max-val 9
+
+loadrt time
+loadrt not
+loadusr qtpyvcp
+
+addf time.0 servo-thread
+addf not.0 servo-thread
+
+net cycle-timer time.0.start <= not.0.out
+net cycle-seconds qtpyvcp.timerseconds.in <= time.0.seconds
+net cycle-minutes qtpyvcp.timerminutes.in <= time.0.minutes
+net cycle-hours qtpyvcp.timerhours.in <= time.0.hours

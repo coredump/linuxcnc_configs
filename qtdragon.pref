@@ -22,7 +22,7 @@ catch_errors = True
 desktop_notify = True
 shutdown_check = True
 sound_player_on = False
-mainwindow_geometry = 0 0 1440 860
+mainwindow_geometry = 0 0 1600 900
 overlay_play_sound = False
 overlay_sound_type = RING
 
@@ -50,10 +50,10 @@ notify_start_detail = This option can be changed in the preference file
 notify_start_timeout = 5
 
 [BOOK_KEEPING]
-last_loaded_directory = /tmp/emcflt-mjm6hh.d
-last_loaded_file = /tmp/emcflt-mjm6hh.d/star.png
+last_loaded_directory = /home/coredump/linuxcnc/nc_files/examples
+last_loaded_file = /home/coredump/linuxcnc/nc_files/examples/arcspiral.ngc
 style_QSS_Path = /usr/share/qtvcp/screens/qtdragon/qtdragon_dark_grey.qss
-RecentPath_0 = /home/coredump/linuxcnc/nc_files/examples/gcmc_lib/star.png
+RecentPath_0 = /home/coredump/linuxcnc/nc_files/examples/arcspiral.ngc
 
 [PROBE OPTIONS]
 Probe tool = 0
