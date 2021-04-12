@@ -2,6 +2,11 @@
 # This file will not be overwritten when you run PNCconf again
 #
 
+# Make the flood button on the UI turn on the vacuum
+net coolant-flood =>  hm2_7i96.0.ssr.00.out-00
+
+
+
 #Start Stop HOLD BUTTONS
 # External Program Pause/Resume, Run/Step, and Stop Buttons
 
