@@ -1,2 +1,4 @@
-T0 P0 X0 Y0 Z0 A0 B0 C0 U0 V0 W0 D0 I0 J0 Q0 ;Tool  Pocket Z Offset     Diameter     Remark 
-T1 P1 X0 Y0 Z0 A0 B0 C0 U0 V0 W0 D3.17500 I0 J0 Q0 ; 
+T0 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.0 I0.0 J0.0 Q0.0 ;Tool  Pocket Z Offset     Diameter     Remark 
+T1 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D25.4 I0.0 J0.0 Q0.0 ;1/4 Bottom Cleaning 
+T2 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D3.175 I0.0 J0.0 Q0.0 ;HQ spiral milling cutter 3.175 2F 
+T3 P0 X0.0 Y0.0 Z0.0 A0.0 B0.0 C0.0 U0.0 V0.0 W0.0 D0.1 I0.0 J0.0 Q0.0 ;HQMASTER V-CARVE 30 dg 

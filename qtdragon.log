@@ -1,0 +1,15 @@
+2021-08-14 18:41:02,752 - QtDesigner - INFO - Logging to "/home/coredump/6040/qtdragon.log"
+2021-08-14 18:41:02,753 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - Machine is METRIC based. unit Conversion constant=0.03937007874015748
+2021-08-14 18:41:02,753 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - TRAJ COORDINATES: XYZ
+2021-08-14 18:41:02,754 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - DEFAULT_LINEAR_VELOCITY = 360.0
+2021-08-14 18:41:02,754 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MIN_LINEAR_VELOCITY = 30.0
+2021-08-14 18:41:02,754 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MAX_LINEAR_VELOCITY = 2100.0
+2021-08-14 18:41:03,143 - QTvcp - INFO - postgui filename: ['hallib/postgui_call_list.hal']
+2021-08-14 18:41:03,170 - QTvcp - INFO - Preference path: /home/coredump/linuxcnc/configs/6040/qtdragon.pref
+2021-08-14 18:41:03,519 - QTvcp.QTVCP.WIDGETS.BASIC_PROBE - INFO - Basic_Probe subprogram started with PID 16983
+
+2021-08-14 18:41:13,377 - QTvcp.QTVCP.QT_ACTION - INFO - Homing Joint: -1
+2021-08-14 18:44:27,643 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: originOffsetDialog_
+2021-08-14 18:44:27,649 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: offset_table
+2021-08-14 18:44:27,653 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager_usb
+2021-08-14 18:44:27,654 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager

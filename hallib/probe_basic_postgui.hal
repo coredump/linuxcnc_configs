@@ -1,22 +1,25 @@
 # needed for the probe basic UI stuff
-loadusr qtpyvcp
+#loadusr qtpyvcp
 
 # The spindle load indicator can be based on whatever metric you have available
 # as long as it matches the data type (in-f for float, in-i for integer)
-net spindle-current qtpyvcp.spindle-load-indicator.in-f
+#net spindle-current qtpyvcp.spindle-load-indicator.in-f
 
-setp qtpyvcp.spindle-load-indicator.min-val 0
-setp qtpyvcp.spindle-load-indicator.max-val 9
+#setp qtpyvcp.spindle-load-indicator.min-val 0
+#setp qtpyvcp.spindle-load-indicator.max-val 9
 
 # Starts a timer so the UI can show how long it has been running
 loadrt time
 loadrt not
-loadusr qtpyvcp
+#loadusr qtpyvcp
 
 addf time.0 servo-thread
 addf not.0 servo-thread
 
 net cycle-timer time.0.start <= not.0.out
-net cycle-seconds qtpyvcp.timerseconds.in <= time.0.seconds
-net cycle-minutes qtpyvcp.timerminutes.in <= time.0.minutes
-net cycle-hours qtpyvcp.timerhours.in <= time.0.hours
+#net cycle-seconds qtpyvcp.timerseconds.in <= time.0.seconds
+#net cycle-minutes qtpyvcp.timerminutes.in <= time.0.minutes
+#net cycle-hours qtpyvcp.timerhours.in <= time.0.hours
+#
+
+

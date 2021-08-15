@@ -1,0 +1,12 @@
+--- Qtvcp Screen Started on: Sat, Aug 14 2021 06:41:02 PM ---
+Sat14 18:41 File Manager error - No such path: /media/coredump
+Sat14 18:41 Machine OFF
+Sat14 18:41 Hard limits tripped
+Sat14 18:41 Tool 0: No Tool
+Sat14 18:41 Machine ON
+Sat14 18:41 Hard limits tripped
+Sat14 18:41 Hard limits tripped
+Sat14 18:41 Tool 3: HQMASTER V-CARVE 30 dg 
+Sat14 18:43 Probe tripped during a coordinate jog.
+Sat14 18:44 Loaded program file : /home/coredump/pcb2gcode - i2cintercept/back.ngc
+Sat14 18:44 Loaded file /home/coredump/pcb2gcode - i2cintercept/back.ngc
