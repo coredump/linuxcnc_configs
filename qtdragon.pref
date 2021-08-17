@@ -14,14 +14,15 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 0 0 100 30
+ToolChangeDialog-geometry = 1185 355 317 191
 LncMessage-geometry = 0 0 100 30
 CalculatorDialog-geometry = 910 507 468 372
+RunFromLineDialog-geometry = 795 411 329 222
 
 [BOOK_KEEPING]
 last_loaded_directory = /home/coredump/pcb2gcode - i2cintercept
-last_loaded_file = /home/coredump/pcb2gcode - i2cintercept/back.ngc
-style_QSS_Path = /usr/share/qtvcp/screens/qtdragon_hd/dark_grey.qss
+last_loaded_file = /home/coredump/pcb2gcode - i2cintercept/drill.ngc
+style_QSS_Path = /home/coredump/6040/qtdragon_style.qss
 
 [ORIGINOFFSET_SYSTEM_NAMES]
 __dialogOffsetViewWidget-G54 = User System 1
@@ -87,9 +88,10 @@ notify_start_timeout = 5
 
 [FILEMANAGER_JUMPLIST]
 /home/coredump/linuxcnc/nc_files = /home/coredump/linuxcnc/nc_files
+/home/coredump = /home/coredump
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 3
+Tool to load = 50
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 17.0
@@ -101,11 +103,11 @@ Touch Height = 19.15
 Sensor Height = 19.15
 Search Velocity = 40.0
 Probe Velocity = 10.0
-Max Probe = 30.0
+Max Probe = 5.0
 Eoffset count = 5
 External offsets = False
 Reload program = False
-Reload tool = True
+Reload tool = False
 Use keyboard = False
 Use tool sensor = False
 Use tool touchplate = True
@@ -113,7 +115,7 @@ Run from line = False
 Use virtual keyboard = False
 Use camera = False
 Use alpha display mode = False
-Inhibit display mouse selection = True
+Inhibit display mouse selection = False
 
 [SCREEN_CONTROL_LAST_SETTING]
 statusadjustmentbar_4-hi-value = 75

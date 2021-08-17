@@ -1,9 +1,0 @@
-o<tool_touch_off> sub
-G10 L20 P0 Z0		(set current Z = 0)
-G91			(switch to relative coordinates)
-G38.2 Z-10 F125	(probe down using a fast feedrate)
-G92 Z19.13		(set Z = plate thickness)
-G0 Z.1 F10		(move up by 0.1mm)
-G38.2 Z-1 F1		(2nd pass: probe down using a slow feedrate to get better accuracy)
-G92 Z19.13		(set Z = plate thickness)
-o<tool_touch_off> endsub

@@ -1,16 +1,18 @@
 # spindle
 
-#qtdragon.modbus-errors
 net spindle-current => qtdragon_hd.spindle_amps
-#net spindle-comm-ok => qtdragon_hd.spindle_fault
 net spindle-voltage => qtdragon_hd.spindle_volts
 
 net tool-change      hal_manualtoolchange.change   <=  iocontrol.0.tool-change
 net tool-changed     hal_manualtoolchange.changed  <=  iocontrol.0.tool-changed
 net tool-prep-number hal_manualtoolchange.number   <=  iocontrol.0.tool-prep-number
+net tool-prep-loop   iocontrol.0.tool-prepare      <=  iocontrol.0.tool-prepared
+#net tool-prep-loop iocontrol.0.tool-prepare <= iocontrol.0.tool-prepared
 
 net min-home-x => qtdragon_hd.hal_led_home_x
 net min-home-y => qtdragon_hd.hal_led_home_y
 net min-home-z => qtdragon_hd.hal_led_home_z
 
 net probe-in => qtdragon_hd.hal_led_probe
+net spindle-at-speed => qtdragon_hd.hal_led_atspeed
+

@@ -1,5 +1,5 @@
 # These files are loaded post GUI, in the order they appear
 
 #source hallib/probe_basic_postgui.hal
-#source hallib/qtdragon_postgui.hal
-source hallib/gmoccapy_postgui.hal
+source hallib/qtdragon_postgui.hal
+#source hallib/gmoccapy_postgui.hal
