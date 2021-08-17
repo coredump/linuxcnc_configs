@@ -14,14 +14,15 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 1185 355 317 191
+ToolChangeDialog-geometry = 910 507 317 191
 LncMessage-geometry = 0 0 100 30
 CalculatorDialog-geometry = 910 507 468 372
 RunFromLineDialog-geometry = 795 411 329 222
+axisToolButtonDialog_ENTRY = 910 507 180 62
 
 [BOOK_KEEPING]
 last_loaded_directory = /home/coredump/pcb2gcode - i2cintercept
-last_loaded_file = /home/coredump/pcb2gcode - i2cintercept/drill.ngc
+last_loaded_file = /home/coredump/pcb2gcode - i2cintercept/back.ngc
 style_QSS_Path = /home/coredump/6040/qtdragon_style.qss
 
 [ORIGINOFFSET_SYSTEM_NAMES]
@@ -91,7 +92,7 @@ notify_start_timeout = 5
 /home/coredump = /home/coredump
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 50
+Tool to load = 5
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 17.0

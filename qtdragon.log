@@ -1,15 +1,17 @@
-2021-08-16 23:11:38,726 - QtDesigner - INFO - Logging to "/home/coredump/6040/qtdragon.log"
-2021-08-16 23:11:38,727 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - Machine is METRIC based. unit Conversion constant=0.03937007874015748
-2021-08-16 23:11:38,727 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - TRAJ COORDINATES: XYZ
-2021-08-16 23:11:38,728 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - DEFAULT_LINEAR_VELOCITY = 1080.0
-2021-08-16 23:11:38,728 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MIN_LINEAR_VELOCITY = 30.0
-2021-08-16 23:11:38,728 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MAX_LINEAR_VELOCITY = 2100.0
-2021-08-16 23:11:38,978 - QTvcp - INFO - postgui filename: ['hallib/postgui_call_list.hal']
-2021-08-16 23:11:39,009 - QTvcp - INFO - Preference path: /home/coredump/linuxcnc/configs/6040/qtdragon.pref
-2021-08-16 23:11:39,367 - QTvcp.QTVCP.WIDGETS.BASIC_PROBE - INFO - Basic_Probe subprogram started with PID 16880
+2021-08-17 12:36:48,280 - QtDesigner - INFO - Logging to "/home/coredump/6040/qtdragon.log"
+2021-08-17 12:36:48,280 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - Machine is METRIC based. unit Conversion constant=0.03937007874015748
+2021-08-17 12:36:48,281 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - TRAJ COORDINATES: XYZ
+2021-08-17 12:36:48,281 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - DEFAULT_LINEAR_VELOCITY = 1080.0
+2021-08-17 12:36:48,281 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MIN_LINEAR_VELOCITY = 30.0
+2021-08-17 12:36:48,281 - QtDesigner.QTVCP.QT_ISTAT - DEBUG - MAX_LINEAR_VELOCITY = 2100.0
+2021-08-17 12:36:48,559 - QTvcp - INFO - postgui filename: ['hallib/postgui_call_list.hal']
+2021-08-17 12:36:48,587 - QTvcp - INFO - Preference path: /home/coredump/linuxcnc/configs/6040/qtdragon.pref
+2021-08-17 12:36:48,964 - QTvcp.QTVCP.WIDGETS.BASIC_PROBE - INFO - Basic_Probe subprogram started with PID 27151
 
-2021-08-16 23:12:27,857 - QTvcp.QTVCP.QT_ACTION - INFO - Homing Joint: -1
-2021-08-16 23:14:18,516 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: originOffsetDialog_
-2021-08-16 23:14:18,525 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: offset_table
-2021-08-16 23:14:18,539 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager_usb
-2021-08-16 23:14:18,541 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager
+2021-08-17 12:37:40,718 - QTvcp.QTVCP.QT_ACTION - INFO - Homing Joint: -1
+2021-08-17 12:49:47,706 - QTvcp.QTVCP.WIDGETS.JOG_INCREMENTS - WARNING - parsed: text not recognized : JOG Increment: None
+2021-08-17 16:02:48,510 - QTvcp.QTVCP.QT_ACTION - INFO - Homing Joint: -1
+2021-08-17 17:01:26,236 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: originOffsetDialog_
+2021-08-17 17:01:26,257 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: offset_table
+2021-08-17 17:01:26,277 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager_usb
+2021-08-17 17:01:26,281 - QTvcp.QTVCP.QT_MAKEPINS - INFO - Closing cleanup on: filemanager
