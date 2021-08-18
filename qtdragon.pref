@@ -92,7 +92,7 @@ notify_start_timeout = 5
 /home/coredump = /home/coredump
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 5
+Tool to load = 4
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 17.0
