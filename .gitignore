@@ -4,4 +4,6 @@ qtvcp/
 *.var
 *.bak
 *.halscope
-
+*.log
+machine_log.dat
+qtdragon_mdi_history.dat

@@ -92,7 +92,7 @@ notify_start_timeout = 5
 /home/coredump = /home/coredump
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 4
+Tool to load = 0
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 17.0
@@ -147,4 +147,5 @@ Calibration offset = 0
 Cal x width = 0
 Cal y width = 0
 Cal diameter = 0
+Probe max xy = 10
 
