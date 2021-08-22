@@ -14,16 +14,13 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 953 428 364 222
-LncMessage-geometry = 0 0 100 30
-CalculatorDialog-geometry = 910 507 472 372
-RunFromLineDialog-geometry = 795 411 329 222
-axisToolButtonDialog_ENTRY = 910 507 180 62
+ToolChangeDialog-geometry = 910 509 364 222
+RunFromLineDialog-geometry = 795 413 329 222
 
 [BOOK_KEEPING]
 last_loaded_directory = /home/coredump/linuxcnc/nc_files/PCB-i2c
 last_loaded_file = /home/coredump/linuxcnc/nc_files/PCB-i2c/ALelectronics-B_Cu_gbr_iso_combined_cnc.ngc
-style_QSS_Path = /home/coredump/6040/qtdragon_style.qss
+style_QSS_Path = DEFAULT
 
 [ORIGINOFFSET_SYSTEM_NAMES]
 __dialogOffsetViewWidget-G54 = User System 1
@@ -44,35 +41,24 @@ offset_table-G59 = User System 6
 offset_table-G59.1 = User System 7
 offset_table-G59.2 = User System 8
 offset_table-G59.3 = User System 9
-originoffsetview-G54 = User System 1
-originoffsetview-G55 = User System 2
-originoffsetview-G56 = User System 3
-originoffsetview-G57 = User System 4
-originoffsetview-G58 = User System 5
-originoffsetview-G59 = User System 6
-originoffsetview-G59.1 = User System 7
-originoffsetview-G59.2 = User System 8
-originoffsetview-G59.3 = User System 9
 
 [SCREEN_OPTIONS]
 catch_errors = True
 desktop_notify = True
+notify_max_msgs = 10
 shutdown_check = True
 sound_player_on = False
 mainwindow_geometry = 0 0 1920 1080
-notify_max_msgs = 10
-overlay_play_sound = False
-overlay_sound_type = RING
 
 [MCH_MSG_OPTIONS]
 mchnMsg_play_sound = True
-mchnMsg_speak_errors = True
-mchnMsg_sound_type = RING
+mchnMsg_speak_errors = False
 mchnMsg_speak_text = True
+mchnMsg_sound_type = BELL
 
 [USR_MSG_OPTIONS]
 usermsg_play_sound = True
-userMsg_sound_type = RING
+userMsg_sound_type = BELL
 userMsg_use_focusOverlay = True
 
 [SHUTDOWN_OPTIONS]
@@ -89,46 +75,33 @@ notify_start_detail = This option can be changed in the preference file
 notify_start_timeout = 5
 
 [FILEMANAGER_JUMPLIST]
-/home/coredump/linuxcnc/nc_files = /home/coredump/linuxcnc/nc_files
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 0
+Tool to load = 1
 Laser X = 100.0
 Laser Y = -20.0
-Sensor X = 17.0
-Sensor Y = 26.0
+Sensor X = 10.0
+Sensor Y = 10.0
 Camera X = 10.0
 Camera Y = 10.0
 Work Height = 20.0
-Touch Height = 19.15
-Sensor Height = 19.15
+Touch Height = 40.0
+Sensor Height = 40.0
 Search Velocity = 40.0
 Probe Velocity = 10.0
-Max Probe = 5.0
-Eoffset count = 5
+Max Probe = 10.0
+Eoffset count = 0
 External offsets = False
 Reload program = False
 Reload tool = False
 Use keyboard = False
-Use tool sensor = False
-Use tool touchplate = True
 Run from line = False
 Use virtual keyboard = False
+Use tool sensor = False
 Use camera = False
-Use alpha display mode = True
-Inhibit display mouse selection = False
-
-[SCREEN_CONTROL_LAST_SETTING]
-statusadjustmentbar_4-hi-value = 75
-statusadjustmentbar_4-low-value = 25
-statusadjustmentbar_3-hi-value = 75
-statusadjustmentbar_3-low-value = 25
-statusadjustmentbar_6-hi-value = 75
-statusadjustmentbar_6-low-value = 25
-statusadjustmentbar_2-hi-value = 75
-statusadjustmentbar_2-low-value = 25
-statusadjustmentbar_5-hi-value = 75
-statusadjustmentbar_5-low-value = 25
+Use alpha display mode = False
+Inhibit display mouse selection = True
+Use tool touchplate = False
 
 [PROBE OPTIONS]
 Probe tool = 0
@@ -147,5 +120,4 @@ Calibration offset = 0
 Cal x width = 0
 Cal y width = 0
 Cal diameter = 0
-Probe max xy = 10
 
