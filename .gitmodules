@@ -1,0 +1,3 @@
+[submodule "qtdragon_hd"]
+	path = qtdragon_hd
+	url = https://github.com/persei802/QtDragon_hd.git

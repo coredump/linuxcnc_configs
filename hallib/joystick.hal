@@ -1,0 +1,64 @@
+loadusr -W hal_input -KRAL Wired
+loadrt or2 names=joy_or2_sel0,joy_or2_sel1
+loadrt mux4 names=joy_mux4
+
+addf joy_or2_sel0 servo-thread
+addf joy_or2_sel1 servo-thread
+addf joy_mux4 servo-thread
+
+# Selects speed based on 3 buttons to be pressed
+
+setp joy_mux4.in0 0.0   # Setting this input to 0 prevents motion unless one of the other buttons is pressed.
+setp joy_mux4.in1 100   # Max jog speed when first speed select button is pressed.
+setp joy_mux4.in2 800.0  # Max jog speed when second speed select button is pressed.
+setp joy_mux4.in3 1500.0 # Max jog speed when third speed select button is pressed.
+
+net slow   joy_or2_sel0.in0 <= input.0.btn-tl
+net medium joy_or2_sel1.in0 <= input.0.btn-z
+net fast   joy_or2_sel0.in1 joy_or2_sel1.in1 <= input.0.btn-tr
+
+net joy-speed-sel0 joy_or2_sel0.out => joy_mux4.sel0
+net joy-speed-sel1 joy_or2_sel1.out => joy_mux4.sel1
+
+net jog-speed joy_mux4.out => halui.axis.jog-speed halui.joint.jog-speed
+
+# Analogs to move
+# To avoid startup problems mux the analog signals to avoid sending random jogs
+loadrt mux2 names=mux2_x,mux2_y,mux2_z 
+
+addf mux2_x servo-thread
+addf mux2_y servo-thread
+addf mux2_z servo-thread
+
+net machine-is-on halui.machine.is-on => mux2_x.sel mux2_y.sel mux2_z.sel  # Control the mux with the machine on/off state.
+
+net jog-x-pre input.0.abs-x-position => mux2_x.in1
+net jog-y-pre input.0.abs-y-position => mux2_y.in1
+net jog-z-pre input.0.abs-rz-position => mux2_z.in1 # rz feels more natural.
+
+setp input.0.abs-y-scale -127.5
+setp input.0.abs-rz-scale -127.5
+
+net jog-x-analog mux2_x.out => mux2_x.in0 halui.joint.0.analog halui.axis.x.analog 
+net jog-y-analog mux2_y.out => mux2_y.in0 halui.joint.1.analog halui.axis.y.analog 
+net jog-z-analog mux2_z.out => mux2_z.in0 halui.joint.2.analog halui.axis.z.analog 
+
+
+# Zero X, Y, Z  and set G30.1 if pressing right bumper + face buttons
+loadrt and2 names=rb_x,rb_y,rb_z,rb_home
+
+addf rb_x servo-thread
+addf rb_y servo-thread
+addf rb_z servo-thread
+addf rb_home servo-thread
+
+net select-btn rb_x.in0 rb_y.in0 rb_z.in0 <= input.0.btn-y
+net select-x rb_x.in1 <= input.0.btn-x
+net select-y rb_y.in1 <= input.0.btn-a
+net select-z rb_z.in1 <= input.0.btn-b
+net select-home rb_home.in1 <= input.0.btn-mode
+
+net zero-x rb_x.out => halui.mdi-command-00
+net zero-y rb_y.out => halui.mdi-command-01
+net zero-z rb_z.out => halui.mdi-command-02
+net home-home rb_home.out => halui.home-all

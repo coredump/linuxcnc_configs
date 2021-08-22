@@ -14,15 +14,15 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 910 507 317 191
+ToolChangeDialog-geometry = 953 428 364 222
 LncMessage-geometry = 0 0 100 30
-CalculatorDialog-geometry = 910 507 468 372
+CalculatorDialog-geometry = 910 507 472 372
 RunFromLineDialog-geometry = 795 411 329 222
 axisToolButtonDialog_ENTRY = 910 507 180 62
 
 [BOOK_KEEPING]
-last_loaded_directory = /home/coredump/pcb2gcode - i2cintercept
-last_loaded_file = /home/coredump/pcb2gcode - i2cintercept/back.ngc
+last_loaded_directory = /home/coredump/linuxcnc/nc_files/PCB-i2c
+last_loaded_file = /home/coredump/linuxcnc/nc_files/PCB-i2c/ALelectronics-B_Cu_gbr_iso_combined_cnc.ngc
 style_QSS_Path = /home/coredump/6040/qtdragon_style.qss
 
 [ORIGINOFFSET_SYSTEM_NAMES]
@@ -68,6 +68,7 @@ overlay_sound_type = RING
 mchnMsg_play_sound = True
 mchnMsg_speak_errors = True
 mchnMsg_sound_type = RING
+mchnMsg_speak_text = True
 
 [USR_MSG_OPTIONS]
 usermsg_play_sound = True
@@ -89,7 +90,6 @@ notify_start_timeout = 5
 
 [FILEMANAGER_JUMPLIST]
 /home/coredump/linuxcnc/nc_files = /home/coredump/linuxcnc/nc_files
-/home/coredump = /home/coredump
 
 [CUSTOM_FORM_ENTRIES]
 Tool to load = 0
@@ -115,7 +115,7 @@ Use tool touchplate = True
 Run from line = False
 Use virtual keyboard = False
 Use camera = False
-Use alpha display mode = False
+Use alpha display mode = True
 Inhibit display mouse selection = False
 
 [SCREEN_CONTROL_LAST_SETTING]
