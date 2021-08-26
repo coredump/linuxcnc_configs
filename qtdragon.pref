@@ -14,13 +14,16 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 910 509 364 222
+ToolChangeDialog-geometry = 910 509 364 197
 RunFromLineDialog-geometry = 795 413 329 222
+LncMessage-geometry = 910 509 99 29
+CalculatorDialog-geometry = 910 509 438 320
+axisToolButtonDialog_ENTRY = 910 509 178 66
 
 [BOOK_KEEPING]
 last_loaded_directory = /home/coredump/linuxcnc/nc_files/PCB-i2c
-last_loaded_file = /home/coredump/linuxcnc/nc_files/PCB-i2c/ALelectronics-B_Cu_gbr_iso_combined_cnc.ngc
-style_QSS_Path = DEFAULT
+last_loaded_file = /home/coredump/linuxcnc/nc_files/PCB-i2c/back.ngc
+style_QSS_Path = None
 
 [ORIGINOFFSET_SYSTEM_NAMES]
 __dialogOffsetViewWidget-G54 = User System 1
@@ -48,7 +51,7 @@ desktop_notify = True
 notify_max_msgs = 10
 shutdown_check = True
 sound_player_on = False
-mainwindow_geometry = 0 0 1920 1080
+mainwindow_geometry = 0 0 1920 1056
 
 [MCH_MSG_OPTIONS]
 mchnMsg_play_sound = True
@@ -77,7 +80,7 @@ notify_start_timeout = 5
 [FILEMANAGER_JUMPLIST]
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 1
+Tool to load = 0
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 10.0
