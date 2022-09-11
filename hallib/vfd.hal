@@ -1,8 +1,8 @@
 loadusr -Wn vfd hy_vfd -n vfd -d /dev/ttyUSB0 -p none -r 9600
 
-# hy_vfd speed feedback is given in RPM, while some pins need it in 
+# hy_vfd speed feedback is given in RPM, while some pins need it in
 # RPS, so we use a scale
-loadrt scale names=scale_to_rpm
+loadrt scale names=scale_to_rpm,scale_voltage
 
 # Replace ttyUSB0 with the address of your adapter
 
@@ -14,7 +14,7 @@ net spindle-on spindle.0.on => vfd.spindle-on
 net spindle-speed-fb <= vfd.spindle-speed-fb
 net spindle-current <= vfd.OutA
 net spindle-frequency <= vfd.OutF
-net spindle-voltage <= vfd.ACV
+net spindle-voltage-fb <= vfd.ACV
 net spindle-comm-ok <= vfd.hycomm-ok
 
 net spindle-at-speed vfd.spindle-at-speed => spindle.0.at-speed
@@ -23,4 +23,9 @@ addf scale_to_rpm servo-thread
 setp scale_to_rpm.gain 0.01666666
 net spindle-speed-fb => scale_to_rpm.in
 net spindle-speed-in spindle.0.speed-in <= scale_to_rpm.out
+
+addf scale_voltage servo-thread
+setp scale_voltage.gain 0.1
+net spindle-voltage-fb => scale_voltage.in
+net spindle-voltage <= scale_voltage.out
 

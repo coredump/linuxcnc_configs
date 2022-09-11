@@ -14,16 +14,17 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 910 509 364 197
+ToolChangeDialog-geometry = 910 509 364 201
 RunFromLineDialog-geometry = 795 413 329 222
-LncMessage-geometry = 910 509 99 29
-CalculatorDialog-geometry = 910 509 438 320
+LncMessage-geometry = 910 509 277 92
+CalculatorDialog-geometry = 910 509 438 324
 axisToolButtonDialog_ENTRY = 910 509 178 66
 
 [BOOK_KEEPING]
-last_loaded_directory = /home/coredump/linuxcnc/nc_files/PCB-i2c
-last_loaded_file = /home/coredump/linuxcnc/nc_files/PCB-i2c/back.ngc
+last_loaded_directory = /home/coredump/linuxcnc/nc_files
+last_loaded_file = /home/coredump/linuxcnc/nc_files/Sherpa Micro Adapter all.ngc
 style_QSS_Path = None
+RecentPath_0 = /home/coredump/linuxcnc/nc_files/Sherpa Micro Adapter all.ngc
 
 [ORIGINOFFSET_SYSTEM_NAMES]
 __dialogOffsetViewWidget-G54 = User System 1
@@ -51,7 +52,7 @@ desktop_notify = True
 notify_max_msgs = 10
 shutdown_check = True
 sound_player_on = False
-mainwindow_geometry = 0 0 1920 1056
+mainwindow_geometry = 0 0 1920 1080
 
 [MCH_MSG_OPTIONS]
 mchnMsg_play_sound = True
@@ -70,6 +71,7 @@ shutdown_alert_sound_type = READY
 shutdown_exit_sound_type = LOGOUT
 shutdown_msg_title = Do you want to Shutdown now?
 shutdown_msg_detail = 
+shutdown_msg_focus_text = 
 
 [NOTIFY_OPTIONS]
 notify_start_greeting = False
@@ -80,7 +82,7 @@ notify_start_timeout = 5
 [FILEMANAGER_JUMPLIST]
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 0
+Tool to load = 7
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 10.0
@@ -105,13 +107,15 @@ Use camera = False
 Use alpha display mode = False
 Inhibit display mouse selection = True
 Use tool touchplate = False
+Retract Distance = 10.0
+Z Safe Travel = 10.0
 
 [PROBE OPTIONS]
 Probe tool = 0
 Probe diameter = 4
-Probe rapid = 10
-Probe feed = 10
-Probe search = 10
+Probe rapid = 100
+Probe feed = 50
+Probe search = 50
 Probe max travel = 10
 Probe max z = 2
 Probe extra depth = 0
@@ -123,4 +127,12 @@ Calibration offset = 0
 Cal x width = 0
 Cal y width = 0
 Cal diameter = 0
+
+[SCREEN_CONTROL_LAST_SETTING]
+gcodegraphics-user-view = p
+gcodegraphics-user-zoom = 10.0
+gcodegraphics-user-panx = 0.0
+gcodegraphics-user-pany = 0.0
+gcodegraphics-user-lat = 0.0
+gcodegraphics-user-lon = 0.0
 

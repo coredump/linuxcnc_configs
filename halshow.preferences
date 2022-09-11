@@ -1,0 +1,23 @@
+# Halshow settings
+# This file is generated automatically.
+wm geometry . 902x510+125+76
+placeFrames 0.3
+set ::ratio 0.3
+set ::old_w_leftf 160
+set ::watchlist {
+    sig+spindle-voltage
+    sig+spindle-voltage-fb
+    sig+spindle-current
+    pin+vfd.ACV
+    pin+vfd.DCV
+    pin+vfd.OutA
+    pin+qtdragon.spindle-amps
+    pin+qtdragon.spindle-volts
+}
+set ::workmode watchhal
+set ::watchInterval 100
+set ::col1_width 100
+set ::ffmts 
+set ::ifmts 
+set ::alwaysOnTop 0
+set ::autoSaveWatchlist 1
