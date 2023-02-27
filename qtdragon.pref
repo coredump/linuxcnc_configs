@@ -14,17 +14,17 @@ RunFromLineDialog_play_sound = True
 RunFromLineDialog_sound_type = READY
 
 [DIALOG_GEOMETRY]
-ToolChangeDialog-geometry = 910 509 364 201
+ToolChangeDialog-geometry = 868 464 364 201
 RunFromLineDialog-geometry = 795 413 329 222
 LncMessage-geometry = 910 509 277 92
 CalculatorDialog-geometry = 910 509 438 324
-axisToolButtonDialog_ENTRY = 910 509 178 66
+axisToolButtonDialog_ENTRY = 910 509 178 72
 
 [BOOK_KEEPING]
 last_loaded_directory = /home/coredump/linuxcnc/nc_files
-last_loaded_file = /home/coredump/linuxcnc/nc_files/Sherpa Micro Adapter all.ngc
+last_loaded_file = /home/coredump/linuxcnc/nc_files/01 Carabiner Adapter.ngc
 style_QSS_Path = None
-RecentPath_0 = /home/coredump/linuxcnc/nc_files/Sherpa Micro Adapter all.ngc
+RecentPath_0 = /home/coredump/linuxcnc/nc_files/01 Carabiner Adapter.ngc
 
 [ORIGINOFFSET_SYSTEM_NAMES]
 __dialogOffsetViewWidget-G54 = User System 1
@@ -82,7 +82,7 @@ notify_start_timeout = 5
 [FILEMANAGER_JUMPLIST]
 
 [CUSTOM_FORM_ENTRIES]
-Tool to load = 7
+Tool to load = 0
 Laser X = 100.0
 Laser Y = -20.0
 Sensor X = 10.0

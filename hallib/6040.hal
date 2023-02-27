@@ -312,7 +312,7 @@ net estop-ext     =>  iocontrol.0.emc-enable-in
 #  ---manual tool change signals---
 
 # qtdragon prefers their own
-#loadusr -W hal_manualtoolchange
+# loadusr -W hal_manualtoolchange
 #net tool-change-request     iocontrol.0.tool-change       =>  hal_manualtoolchange.change
 #net tool-change-confirmed   iocontrol.0.tool-changed      <=  hal_manualtoolchange.changed
 #net tool-number             iocontrol.0.tool-prep-number  =>  hal_manualtoolchange.number
